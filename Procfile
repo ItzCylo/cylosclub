@@ -1,1 +1,1 @@
-web: node ./Dockerfile.prod
+web: ./Dockerfile.prod
