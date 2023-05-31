@@ -6,11 +6,11 @@ USER app
 WORKDIR /app/frontend
 COPY --chown=app:app ./frontend/package*.json ./
 RUN ln -s ./frontend/src/types /app
-RUN npm i ----legacy-peer-dep
+RUN npm i --legacy-peer-deps
 
 WORKDIR /app/backend
 COPY --chown=app:app ./backend/package*.json ./
-RUN npm i ----legacy-peer-deps
+RUN npm i --legacy-peer-deps
 
 WORKDIR /app
 COPY --chown=app:app . .
