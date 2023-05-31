@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "ESNext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
+    "preserveConstEnums": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "downlevelIteration": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "types": [
+      "cypress",
+      "dom-mediacapture-record"
+    ],
+    "checkJs": false
+  },
+  "include": [
+    "src",
+    "src/env/.prod.env",
+    "**/*.ts"
+  ]
+}

@@ -1,0 +1,36 @@
+:root {
+  --primary: #e95678;
+  --secondary: #fab795;
+  --tertiary: #b877db;
+
+  --heading: #25b2bc;
+  --font: #fdf0ed;
+  --muted: #6c757d;
+
+  --success: #09f7a0;
+  --danger: #f43e5c;
+  --warning: #f77d26;
+
+  --normal: #dcddde;
+  --link: hsl(197, calc(var(--saturation-factor, 1) * 100%), 47.8%);
+  --channel: #8e9297;
+
+  --saturation-factor: 1;
+
+  --bg-primary: #2e303e;
+  --bg-secondary: #232530;
+  --bg-secondary-alt: #212225;
+  --bg-tertiary: #1c1e26;
+  --bg-textarea: #232530;
+  --bg-modifier-accent: hsla(0, 0%, 100%, 0.06);
+  --bg-modifier-selected: rgba(79, 84, 92, 0.32);
+  --bg-floating: #18191c;
+
+  --elevation: 0 1px 0 rgba(4, 4, 5, 0.2), 0 1.5px 0 rgba(6, 6, 7, 0.05),
+    0 2px 0 rgba(4, 4, 5, 0.05);
+
+  --font-primary: Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  --light: #fdf0ed;
+  --dark: #16161c;
+}

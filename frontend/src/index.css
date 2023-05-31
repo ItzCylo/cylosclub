@@ -1,0 +1,93 @@
+@import './styles/theme/theme-util.css';
+@import './styles/output.css';
+@import '~@fortawesome/fontawesome-svg-core/styles.css';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--bg-secondary);
+  border-radius: 10px;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  overflow-y: hidden;
+}
+
+/* overrides */
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.react-contextmenu-wrapper {
+  display: inline;
+}
+
+nav[role='menu'] {
+  z-index: 10;
+}
+
+/* fix div[content-editable] placeholder */
+[contenteditable='true']:empty:before {
+  content: attr(placeholder);
+  pointer-events: none;
+  display: block;
+  /* For Firefox */
+  color: var(--muted);
+}
+
+::file-selector-button {
+  display: none;
+}
+
+#tsparticles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.text-center-v {
+  line-height: 225%;
+  height: 100%;
+}
+
+.center-v {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.w-0 {
+  width: 0;
+}

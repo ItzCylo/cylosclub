@@ -1,0 +1,17 @@
+input ~ .dot {
+  transition: 0.3s ease-in-out !important;
+}
+
+/* compensation for save changes rerendering channel-settings-perms */
+input[value='on'] ~ .dot {
+  transform: translateX(100%);
+  background-color: var(--success);
+}
+input[value='off'] ~ .dot {
+  transform: translateX(0%);
+  background-color: var(--danger);
+}
+input[value='n/a'] ~ .dot {
+  background-color: #ccc;
+  transform: translateX(50%);
+}

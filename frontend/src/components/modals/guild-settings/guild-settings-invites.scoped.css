@@ -1,0 +1,12 @@
+th,
+td {
+  padding-left: 7.5px;
+}
+
+th {
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: var(--bg-secondary);
+}

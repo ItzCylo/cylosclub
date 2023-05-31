@@ -1,0 +1,22 @@
+version: '3.8'
+services:  
+  database:
+    container_name: accord_database
+    image: mongo:5-focal
+    ports: [27018:27017]
+    volumes: [accord:/data/db]
+  app:
+    container_name: accord_app
+    depends_on: [database]
+    build:
+      context: ./
+      dockerfile: Dockerfile.dev
+    ports: [3000:3000, 4200:4200]
+    env_file: [./backend/.env, ./frontend/env/.env.dev]
+    volumes:
+      - ./backend/src:/app/backend/src
+      - ./backend/assets:/app/backend/assets
+      - ./backend/logs:/app/backend/logs
+      - ./frontend/src:/app/frontend/src
+volumes:
+  accord:
