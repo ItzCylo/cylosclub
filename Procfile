@@ -1,1 +1,0 @@
-web: node ./bin/start-prod.sh
