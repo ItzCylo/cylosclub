@@ -1,5 +1,3 @@
 build:
   docker:
-    web: Dockerfile.prod
-run:
-  web: ./bin/start-prod.sh
+    web: ./Dockerfile.prod
