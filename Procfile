@@ -1,1 +1,1 @@
-web: ./Dockerfile.prod
+web: node ./bin/start-prod.sh
