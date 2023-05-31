@@ -10,7 +10,7 @@ RUN npm i --force
 
 WORKDIR /app/backend
 COPY --chown=app:app ./backend/package*.json ./
-RUN npm i
+RUN npm i --force
 
 WORKDIR /app
 COPY --chown=app:app . .
