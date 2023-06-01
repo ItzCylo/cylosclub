@@ -6,11 +6,11 @@ USER app
 WORKDIR /app/frontend
 COPY --chown=app:app ./frontend/package*.json ./
 RUN ln -s ./frontend/src/types /app
-RUN npm i --force
+RUN npm i
 
 WORKDIR /app/backend
 COPY --chown=app:app ./backend/package*.json ./
-RUN npm i --force
+RUN npm i
 
 WORKDIR /app
 COPY --chown=app:app . .
